@@ -20,7 +20,6 @@ module.exports = {
         const api_key = this.mailgun.$auth.api_key;
         const domain = 'send.web-bee.ru';
         const mailgun = mg({apiKey: api_key, domain: domain});
-        // return `hello world! mailgun.api_key`
         const data = {
             from: 'web-bee.ru <internship@web-bee.ru>',
             to: this.targetEmail,
